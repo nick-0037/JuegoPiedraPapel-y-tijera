@@ -10,8 +10,8 @@
   <body>
     <div class="grid text-center h-screen bg-color md:grid-cols-3 md:items-center">
       <div class="">
-        <h3 id="victorias">Victorias:0</h3>
-        <h2 class="text-4xl uppercase pb-5">Jugador</h2>
+        <h3 id="victorias">Victorias: 0</h3>
+        <h2 class="text-4xl uppercase pb-5 pt-1">Jugador</h2>
         <div class="flex justify-center gap-5">
           <img onclick="jugar(0)" class="w-12 " src="./img/piedra.png" alt="" />
           <img onclick="jugar(1)" class="w-12 " src="./img/papel.png" alt="" />
@@ -20,14 +20,17 @@
       </div>
       <div class="">
         <h1 id="resultado" class="flex flex-col text-4xl uppercase pb-20">Juega!<h1/>
-        <h2 class="text-2xl">Historial<h2/>
+        <h2 class="text-2xl pb-3">Historial<h2/>
+        <div class="flex justify-center">
+          <p id="historialJuego" class="text-xl"></p>
+        </div>
         <div class="flex justify-center">
           <p id="historialJuego" class="text-xl"></p>
         </div>
       </div>
       <div class="">
-        <h3 id="victoriasComputadora">Victorias:0</h3>
-        <h2 class="text-4xl uppercase pb-5">NPC</h2>
+        <h3 id="victoriasComputadora">Victorias: 0</h3>
+        <h2 class="text-4xl uppercase pb-5 pt-1">NPC</h2>
         <div class="flex justify-center gap-5">
           <img class="w-12" src="./img/piedra.png" alt="" />
           <img class="w-12" src="./img/papel.png" alt="" />

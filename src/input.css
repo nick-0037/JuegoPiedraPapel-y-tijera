@@ -3,5 +3,33 @@
 @tailwind utilities;
 
 .bg-color {
-    background-color: #d0ab7a;
+    background: #d0ab7a;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+    transition: .5s;
+    object-fit: cover;
+}
+
+img:hover { 
+    scale: 1.2;
+}
+
+#resultado {
+    animation: textAnimation 2s ;
+    object-fit: cover;
+    scale: 1.2;
+    color: #c21919
+}
+
+@keyframes textAnimation {
+    0% {
+        scale: .2;
+    }
+    100% {
+        scale: 1.2;
+        color: #c21919;
+    }
 }

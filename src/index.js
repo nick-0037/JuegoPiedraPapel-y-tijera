@@ -36,8 +36,8 @@ function jugar(numero) {
     victoriasComputadora++;
   } 
   // Imprimo en el HTML las victorias
-  document.getElementById("victorias").innerHTML = "Victorias:" + victoriasJugador;
-  document.getElementById("victoriasComputadora").innerHTML = "Victorias:" + victoriasComputadora;
+  document.getElementById("victorias").innerHTML = "Victorias: " + victoriasJugador;
+  document.getElementById("victoriasComputadora").innerHTML = "Victorias: " + victoriasComputadora;
   /* Esta condicion es para evaluar si las victorias del jugador o  las victorias de la computadora 
    se reinicien a 0 lleguen a 5*/
   if (victoriasJugador == 5 || victoriasComputadora == 5) {
@@ -45,8 +45,8 @@ function jugar(numero) {
     victoriasJugador = 0;
     victoriasComputadora = 0;
     // Esto imprime en el HTML si la condicion se cumple que se coloquen las victorias en 0 
-    document.getElementById("victorias").innerHTML = "Victorias:0" 
-    document.getElementById("victoriasComputadora").innerHTML = "Victorias:0" 
+    document.getElementById("victorias").innerHTML = "Victorias: 0" 
+    document.getElementById("victoriasComputadora").innerHTML = "Victorias: 0" 
     document.getElementById("resultado").innerHTML = "Juega!"
     // Borra la lista
     historialJuego = [];
